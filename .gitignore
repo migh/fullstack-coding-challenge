@@ -1,3 +1,5 @@
+# Python
+
 env/
 *.pyc
 __pycache__/
@@ -13,3 +15,6 @@ build/
 *.swp
 *~
 
+# Node
+
+**/node_modules/
