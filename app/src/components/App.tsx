@@ -1,9 +1,16 @@
 import * as React from 'react';
 
-export interface AppProps { children: any; }
+import { InputContainer } from './Input.container';
+
+export interface AppProps {}
 
 export const App = (props: AppProps) => (
-  <div>
-    {props.children}
+  <div id="container">
+    <div className="row justify-content-md-center">
+      <div className="col-12 col-lg-6 text-center">
+        <h2>Test Unbabel API</h2>
+        <InputContainer />
+      </div>
+    </div>
   </div>
 );

@@ -1,9 +1,12 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
+  watch: true,
   entry: './src/index.tsx',
   output: {
     filename: 'app.js',
-    path: __dirname + '/dist'
+    path: path.resolve(__dirname, '../unbabeler/static/js')
   },
   devtool: 'source-map',
   resolve: {
