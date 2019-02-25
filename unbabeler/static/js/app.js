@@ -98,7 +98,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
 const Input_container_1 = __webpack_require__(/*! ./Input.container */ "./src/components/Input.container.tsx");
-exports.App = (props) => (React.createElement("div", { id: "container" },
+exports.App = () => (React.createElement("div", { id: "container" },
     React.createElement("div", { className: "row justify-content-md-center" },
         React.createElement("div", { className: "col-12 col-lg-6 text-center" },
             React.createElement("h2", null, "Test Unbabel API"),
@@ -258,7 +258,7 @@ function getClass(status) {
 }
 exports.TranslationsList = (props) => (React.createElement("div", { className: "row justify-content-md-center" },
     React.createElement("div", { className: "col-10" },
-        React.createElement("ul", { className: "list-group" }, props.translations.sort(orderByLength).map(translation => (React.createElement("li", { className: `list-group-item mb-1 ${getClass(translation.status)}`, style: { cursor: 'pointer' }, onClick: props.onItemClick(translation) },
+        React.createElement("ul", { className: "list-group" }, props.translations.sort(orderByLength).map(translation => (React.createElement("li", { key: translation.id, className: `list-group-item mb-1 ${getClass(translation.status)}`, style: { cursor: 'pointer' }, onClick: props.onItemClick(translation) },
             translation.textSource,
             React.createElement("span", { className: "float-right" }, capitalize(translation.status)),
             translation.status === 'completed' && (React.createElement(React.Fragment, null,

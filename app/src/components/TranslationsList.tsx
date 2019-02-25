@@ -37,6 +37,7 @@ export const TranslationsList = (props: TranslationsListProps) => (
         <ul className="list-group">
           {props.translations.sort(orderByLength).map(translation => (
             <li
+              key={translation.id}
               className={`list-group-item mb-1 ${getClass(translation.status)}`}
               style={{ cursor: 'pointer' }}
               onClick={props.onItemClick(translation)}
