@@ -11,6 +11,7 @@ requests = "*"
 sqlalchemy = "*"
 flask-sqlalchemy = "*"
 psycopg2-binary = "*"
+click = "*"
 
 [requires]
 python_version = "3.7"
